@@ -1,0 +1,137 @@
+#root {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* sample pdf viewer css */
+body {
+  margin: 0;
+  background-color: #525659;
+  font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.Example {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.Example header {
+  background-color: #815bb4;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  height: 60px;
+}
+
+.Example header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.Example__sidebar-wrapper {
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+}
+
+.Example__sidebar {
+  padding: 24px;
+}
+
+.Example__sidebar-title {
+  font-size: 16px;
+}
+
+.Example__sidebar-button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.Example__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  max-height: calc(100vh - 60px);
+}
+
+.Example__container__load {
+  margin-top: 1em;
+  color: white;
+}
+
+.Example__container__document {
+  width: 100%;
+  max-width: calc(100% - 2em);
+  margin: 1em 0;
+  flex-grow: 1;
+}
+
+.Example__container__document .react-pdf__Document {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(auto, 600px));
+    justify-content: space-evenly;
+}
+
+.Example__container__document .react-pdf__Document.Document--first-page {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    height: 100%;
+    min-height: 600px;
+}
+
+.Example__container__document .react-pdf__Page {
+  margin: 1em 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.Example__container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
+.Example__container__document--no-file {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

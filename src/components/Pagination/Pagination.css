@@ -1,0 +1,9 @@
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 100px);
+  column-gap: 16px;
+}
+
+.pagination__current {
+  text-align: right;
+}
