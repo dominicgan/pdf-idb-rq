@@ -1,6 +1,10 @@
 # PDF Viewer + caching with react-query IndexedDB
 
-References:
+Download and cache large files in IndexedDb with React Query
+
+[Demo](https://sto-poc-pdf-cached.netlify.app/)
+
+## References:
 - Vite
   - https://vitejs.dev/guide/
 - React PDF
